@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: dashed;
+
+}
+.container{
+    background-color: green;
+    width: 800px;
+    height: 800px;
+}
+.app{
+    background-color: red;
+    width: 700px;
+    height: 700px;
+}
+
+.chat{ 
+    background-color: pink;
+    width: 250px;
+    height: 700px;
+
+}
+.head{
+    background-color: yellow;
+    display:flex;
+    justify-content: space-between;
+
+}
+.notification{
+    background-color: aqua;
+}
