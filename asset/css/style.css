@@ -1,3 +1,4 @@
+/* general */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,23 +6,53 @@
     border: dashed;
 
 }
+
+.flex{
+    display: flex;
+  }
+  
+  .space-between{
+    justify-content: space-between;
+  }
+  
+  .space-around{
+    justify-content: space-around;
+  }
+  
+  .column{
+    flex-direction: column;
+  }
+
+  /* app */
 .container{
     background-color: green;
-    width: 800px;
-    height: 800px;
+    height: 10vh;
+    z-index: 999;
 }
 .app{
     background-color: red;
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    padding: 200px;
+
+   
 }
 
+/* left */
+aside {
+    
+    flex-shrink: 0;
+    z-index: 0;
+    overflow-y: auto;
+  }
 .chat{ 
     background-color: pink;
     width: 250px;
     height: 700px;
 
 }
+
 .head{
     background-color: yellow;
     display:flex;
@@ -30,4 +61,29 @@
 }
 .notification{
     background-color: aqua;
+    
+}
+
+/* right */
+main{
+    height: 700px;
+    background-color: bisque;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.account{
+    background-color: grey;
+    width: 300px;
+    height: 100px;
+
+
+}
+.content{
+    width: 300px;
+    height: 300px;
+
 }
