@@ -10,18 +10,46 @@
   --bz-blocks-height: 70px;
   --bz-primary: #333;
   --bz-body: #009689;
-  --bz-body-b: #d9dbd7;
+  --bz-body-b: #dadbd4;
+  --bz-user: #ebe9eb;
 
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #009688 0%,
+    #009688 15%,
+    #dadbd4 15%,
+    #dadbd4 100%);
+}
+
+.flex{
+  display: flex;
 }
 
 .debug * {
   border: 1px dashed black;
 }
 
+.user-profile {
+  background-color: var(--bz-body-b);
+  padding 10px 15px;
+  justify-content: space-between;
+}
+
+.user-profile .icon {
+  font-size: 20px;
+  color: var(--bz-body-b);
+
+}
+
 .debug {
-  .user_profile {
-    background-color: palevioletred;
-  }
+
+ 
+  
 
   .notifications {
     background-color: palegreen;
@@ -75,6 +103,7 @@ body {
     height: 100%;
     margin: 0;
   }
+
 
 
   .left {
