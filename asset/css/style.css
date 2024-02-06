@@ -54,11 +54,16 @@
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   height: 100vh;
-  background-image: linear-gradient (to bottom, #009689 0%, #009689 120px,
-  #d9dbd7 120px, #d9dbd7 100%) 
-  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    #009688 0%,
+    #009688 15%,
+    #dadbd4 15%,
+    #dadbd4 100%);
 }
+  
 
 #app {
   height: 95vh;
