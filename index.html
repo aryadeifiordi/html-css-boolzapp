@@ -6,55 +6,37 @@
     <title>Boolzapp</title>
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
-<body>
-    <!-- app --> 
-    <div class="container">
-        <div class="app">
-
-            <!-- left -->
-            <aside class="chat">
-                <div class="head">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <span>circle</span>
-                        <span>chat</span>
-                        <span>dots</span>
-
-                    </div>
-
-
-                </div>
-                <div class="notification flex">
-                    <div>
-                        campanella
-                    </div>
-                </div>
-                <div class="search">
-                    <span>lente</span>
-                    <input type="text">
-
-                </div>
-                <div class="contact">
-                   contatti
-                </div>
-
-            </aside>
-            <!-- right-->
-            <main>
-                <header class="flex space-between">
-                    <div class="account">
-                        <img src="" alt="">
-
-                    </div>
-                </header>
-                <div class="content">
-                    messaggi
-                </div>
-            </main>
-
-    </div>
+<body class="debug">
+    <div id="app">
+        <div class="left">
+          <div class="user_profile"></div>
+          <!-- /.user_profile -->
+          <div class="notifications"></div>
+          <!-- /.notifications -->
+          <div class="search"></div>
+          <!-- /.search -->
+          <div class="contacts_list"></div>
+          <!-- /.contacts_list -->
+    
+        </div>
+        <div class="right">
+          <div class="contact_profile"></div>
+          <!-- /.contact_profile -->
+          <div class="chat">
+    
+    
+            <div class="sent"></div>
+            <!-- /.sent -->
+            <div class="received"></div>
+            <!-- /.received -->
+    
+          </div>
+          <!-- /.chat -->
+          <div class="prompt"></div>
+          <!-- /.prompt -->
+        </div>
+      </div>
+    
     
 </body>
 </html>

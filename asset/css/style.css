@@ -1,89 +1,146 @@
 /* general */
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --bz-blocks-height: 70px;
+  --bz-primary: #333;
+  --bz-body: #009689;
+  --bz-body-b: #d9dbd7;
+
+}
+
+.debug * {
+  border: 1px dashed black;
+}
+
+.debug {
+  .user_profile {
+    background-color: palevioletred;
+  }
+
+  .notifications {
+    background-color: palegreen;
+  }
+
+  .search {
+    background-color: palegoldenrod;
+  }
+
+  .contacts_list {
+    background-color: paleturquoise;
+  }
+
+
+  .contact_profile {
+    background-color: palevioletred;
+  }
+
+  .chat {
+    background-color: deepskyblue;
+
+    >div {
+      width: 300px;
+    }
+  }
+
+  .prompt {
+    background-color: deeppink;
+  }
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient (to bottom, #009689 0%, #009689 120px,
+  #d9dbd7 120px, #d9dbd7 100%) 
+  overflow: hidden;
+}
+
+#app {
+  height: 95vh;
+  margin: 1rem auto 2rem;
+  max-width: 1200px;
+  display: flex;
+
+  @media (max-width: 991px) {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    border: dashed;
-
-}
-
-.flex{
-    display: flex;
-  }
-  
-  .space-between{
-    justify-content: space-between;
-  }
-  
-  .space-around{
-    justify-content: space-around;
-  }
-  
-  .column{
-    flex-direction: column;
   }
 
-  /* app */
-.container{
-    background-color: green;
-    height: 10vh;
-    z-index: 999;
-}
-.app{
-    background-color: red;
-    width: 100%;
-    height: calc(100vh);
-    display: flex;
-    padding: 200px;
 
-   
-}
+  .left {
+    width: 320px;
+    height: 100%;
 
-/* left */
-aside {
-    
-    flex-shrink: 0;
-    z-index: 0;
-    overflow-y: auto;
+
+
+    &>div:not(:nth-child(4)) {
+      height: var(--bz-blocks-height);
+    }
+
+    &> :nth-child(4) {
+      height: calc(100% - (var(--bz-blocks-height) * 3));
+      overflow-y: scroll;
+    }
+
+
+
+    @media screen and (max-width: 991px) {
+      width: 120px;
+
+      &>.notifications,
+      &>.search {
+        display: none;
+      }
+
+      &>.contacts_list {
+        height: calc(100% - 70px);
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+
+
+
   }
-.chat{ 
-    background-color: pink;
-    width: 250px;
-    height: 700px;
 
-}
-
-.head{
-    background-color: yellow;
-    display:flex;
-    justify-content: space-between;
-
-}
-.notification{
-    background-color: aqua;
-    
-}
-
-/* right */
-main{
-    height: 700px;
-    background-color: bisque;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-}
- 
-.account{
-    background-color: grey;
-    width: 300px;
-    height: 100px;
+  .right {
+    flex-grow: 1;
 
 
-}
-.content{
-    width: 300px;
-    height: 300px;
+    >.contact_profile,
+    >.prompt {
+      height: 70px;
+    }
+
+    >.chat {
+      height: calc(100% - 140px);
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+
+      &>div {
+        min-height: 140px;
+      }
+
+      >.sent {
+        align-self: flex-end;
+      }
+
+      >.received {
+        align-self: flex-start;
+      }
+
+    }
+
+
+  }
 
 }
