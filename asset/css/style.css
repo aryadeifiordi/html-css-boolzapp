@@ -12,21 +12,22 @@
   --bz-body: #009689;
   --bz-body-b: #dadbd4;
   --bz-user: #ebe9eb;
+  --bz-notification: #8edafc;
+
 
 }
 
 body {
   font-family: 'Lato', sans-serif;
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    #009688 0%,
-    #009688 15%,
-    #dadbd4 15%,
-    #dadbd4 100%);
+  background: linear-gradient(to bottom,
+      #009688 0%,
+      #009688 15%,
+      #dadbd4 15%,
+      #dadbd4 100%);
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
@@ -46,52 +47,65 @@ body {
 
 }
 
-.debug {
+.notifications {
+  background-color: var(--bz-notification);
+}
 
- 
+.news{
+  color: var(--notification);
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.notifications .news{
+  font-size: 16px;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px
+}
+
+.news{
+  font-size: 14px;
+  margin-top: 3px;
+}
   
 
-  .notifications {
-    background-color: palegreen;
-  }
+.search {
+  background-color: palegoldenrod;
+}
 
-  .search {
-    background-color: palegoldenrod;
-  }
-
-  .contacts_list {
-    background-color: paleturquoise;
-  }
+.contacts_list {
+  background-color: var(--bz-user);
+}
 
 
-  .contact_profile {
-    background-color: palevioletred;
-  }
+.contact_profile {
+  background-color: var(--bz-body-b);
+}
 
-  .chat {
-    background-color: deepskyblue;
+.chat {
+  background-color: var(--bz-body-b);
 
-    >div {
-      width: 300px;
-    }
-  }
-
-  .prompt {
-    background-color: deeppink;
+  >div {
+    width: 300px;
   }
 }
+
+.prompt {
+  background-color: deeppink;
+}
+
 
 body {
   font-family: 'Lato', sans-serif;
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    #009688 0%,
-    #009688 15%,
-    #dadbd4 15%,
-    #dadbd4 100%);
+  background: linear-gradient(to bottom,
+      #009688 0%,
+      #009688 15%,
+      #dadbd4 15%,
+      #dadbd4 100%);
 }
-  
+
 
 #app {
   height: 95vh;
