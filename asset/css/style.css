@@ -31,9 +31,7 @@ body {
       #dadbd4 100%);
 }
 
-.debug{
-  border: dashed;
-}
+
 
 input{
   
@@ -62,7 +60,7 @@ img{
   width: 50px;
   border-radius: 50%;
 }
-/*  */
+
 
 .whatsapp .row{
   height: 100vh;
@@ -77,10 +75,10 @@ img{
 .my-info{
   background-color: var(--bz-user);
   padding: 10px 15px;
-  border: 1px solid black;
+  border: 1px solid var(--bz-darkgrey);
 }
 
-/* colonna piccola */
+/* colonna sinistra */
 .whatsapp .small{
   width: 30%;
 }
@@ -104,7 +102,7 @@ img{
     padding-left: 15px;
 }
 
-/* NOTIFICATION */
+/* notifiche */
 .notification{
   background-color: var(--bz-notification);
   padding: 10px 15px;
@@ -137,7 +135,7 @@ img{
   margin-top: 3px;
 }
 
-/* RESEARCH */
+/* ricerca */
 .research{
   background-color: var(--bz-user);
   position: relative;
@@ -171,7 +169,7 @@ img{
   color: #d7d8da;
 }
 
-/* INFO-CONTACTS */
+/* info-contact */
 .col .bottom .info-contacts{
   border: 1px solid var(--bz-border);
   padding: 10px 15px;
@@ -201,7 +199,7 @@ img{
   font-size: 12px;
 }
 
-/* colonna grande */
+/* colonna destra */
 .whatsapp .big{
   width: 70%;
 }
@@ -220,7 +218,7 @@ img{
   flex-grow:1;
   overflow-y: scroll;
   padding: 50px 90px 0;
-  background-image: url('./asset/css/img/mine_480.jpg');
+  background-image: url(./img/mine_480.jpg);
 }
 
 .chat .right{
@@ -318,8 +316,8 @@ img{
   font-size: 25px;
 }
 
-/*  */
-/*  */
+/* media */
+
 @media screen and (max-width:992px){
   .container{
       width: 100%;
@@ -382,4 +380,3 @@ img{
   }
 }
 
-/* darkmode */
