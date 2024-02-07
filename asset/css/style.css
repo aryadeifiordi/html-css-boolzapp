@@ -13,6 +13,7 @@
   --bz-body-b: #dadbd4;
   --bz-user: #ebe9eb;
   --bz-notification: #8edafc;
+  --bz-sent:#d5f9ba;
 
 
 }
@@ -105,9 +106,51 @@ img{
   background-color: var(--bz-user);
 }
 
+.name-contact{
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.name-contact h4{
+  margin-bottom: 5px;
+}
+
+
+/* contact_profilwe */
 
 .contact_profile {
   background-color: var(--bz-body-b);
+}
+
+/* right */
+.app .right{
+  width: 70%;
+  background-image: url('/asset/css/img/mine_480.jpg');
+}
+.right .contact_profile{
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* chat */
+.right .chat{
+  flex-grow:1;
+  overflow-y: scroll;
+  padding: 50px 90px 0;
+}
+
+.chat .side{
+  flex-direction: column;
+  align-items: end;
+}
+
+.chat .sent{
+  background-color: var(--bz-sent);
+}
+
+.chat .received{
+  background-color: var(--bz-user);
 }
 
 .chat {

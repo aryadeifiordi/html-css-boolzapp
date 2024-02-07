@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body class="debug">
@@ -20,7 +19,7 @@
         <div class="left">
             <div class="user-profile flex">
                 <img src="asset/css/img/avatar_1_360.jpg" alt="">
-                <div class="icon none">
+                <div class="icon">
                     <i class="fa-solid fa-arrows-rotate"></i>
                     <i class="fa-solid fa-message"></i>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -46,28 +45,129 @@
                 </div>
             </div>
 
-            <div class="contacts_list">
-                
-            </div>
             <!-- /.contacts_list -->
 
-        </div>
-        <div class="right">
-            <div class="contact_profile"></div>
-            <!-- /.contact_profile -->
-            <div class="chat">
+            <div class="contacts_list">
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_2_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Fabio</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">16.05</p>
+                </div>
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_3_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Samuele</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">16.03</p>
+                </div>
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_4_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Alessandro B.</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">15.50</p>
+                </div>
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_5_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Alessandro L.</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">15.45</p>
+                </div>
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_6_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Sara</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">15.40</p>
+                </div>
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_7_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Giovanni</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">15.22</p>
+                </div>
+                <div class="contact_profile flex">
+                    <img src="asset/css/img/avatar_8_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Alessio</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="time d-none">15.15</p>
+                </div>
 
-
-                <div class="sent"></div>
-                <!-- /.sent -->
-                <div class="received"></div>
-                <!-- /.received -->
 
             </div>
-            <!-- /.chat -->
-            <div class="prompt"></div>
-            <!-- /.prompt -->
+
+
         </div>
+        <div class="right flex">
+            <!-- contact_profile -->
+            <div class="contact_profile flex">
+                <div class="flex">
+                    <img src="asset/css/img/avatar_1_360.jpg" alt="">
+                    <div class="name-contact flex">
+                        <h4>Michele</h4>
+                        <p>Ultimo accesso oggi alle 16:26</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <!-- chat -->
+            <div class="chat">
+                <div class="side flex">
+                    <div class="sent sms-style">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="hide flex">
+                            <ul class="flex">
+                                <li>Info messaggi</li>
+                                <li>Cancella messaggio</li>
+                            </ul>
+                        </div>
+                        <p class="write">Spedito Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                            doloribus
+                            at
+                            magnam quibusdam dolore. Officiis, obcaecati odit odio omnis vel unde beatae eaque debitis
+                            animi, fuga
+                            voluptate impedit ratione! Nulla.</p>
+                        <p>16:13</p>
+                    </div>
+                </div>
+
+                <div class="received sms-style">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="hide d-flex">
+                        <ul class="d-flex">
+                            <li>Info messaggi</li>
+                            <li>Cancella messaggio</li>
+                        </ul>
+                    </div>
+                    <p class="write">Ricevuto Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non esse
+                        facere illo cum. Veniam enim porro praesentium. Iste, nostrum perspiciatis soluta ea fuga nemo
+                        id
+                        excepturi inventore natus nisi.</p>
+                    <p>16:15</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prompt"></div>
+        <!-- /.prompt -->
+    </div>
     </div>
 
 
