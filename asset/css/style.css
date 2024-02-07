@@ -34,6 +34,14 @@ body {
 .debug * {
   border: 1px dashed black;
 }
+/* user */
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-self: center;
+}
+
 
 .user-profile {
   background-color: var(--bz-body-b);
@@ -46,7 +54,7 @@ body {
   color: var(--bz-body-b);
 
 }
-
+/* notifications */
 .notifications {
   background-color: var(--bz-notification);
 }
@@ -69,10 +77,29 @@ body {
   margin-top: 3px;
 }
   
-
+/* search*/
 .search {
-  background-color: palegoldenrod;
+  background-color: var(--bz-user );
+  
 }
+
+.bar{
+  height: 70%;
+  width: 95%;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+}
+
+.search input{
+  height: 100%;
+  width: 85%;
+  border-style: none;
+  background-color: white;
+}
+
+
+/* contacts */
 
 .contacts_list {
   background-color: var(--bz-user);
