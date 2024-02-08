@@ -78,7 +78,7 @@ img{
   border: 1px solid var(--bz-darkgrey);
 }
 
-/* colonna sinistra */
+/* contact area */
 .whatsapp .small{
   width: 30%;
 }
@@ -199,7 +199,7 @@ img{
   font-size: 12px;
 }
 
-/* colonna destra */
+/* chat area */
 .whatsapp .big{
   width: 70%;
 }
